@@ -52,7 +52,7 @@ Since an empty string reads the same forward and backward, it is a palindrome.`
 
 ## Explanation:
 
-I've created a function expression, using ES6 syntax, that is defined by an anonymous function that accepts `s` as a string of words.
+I've built a function expression, using ES6 syntax, that is defined by an anonymous function that accepts `s` as a string of words.
 <br/>
 
 Within the anonymous function, I establish a variable for the input string called `sanitizedString` which takes the string `s` and applies the string prototype method `replace` to remove the non-alphanumeric characters with the help of regex.

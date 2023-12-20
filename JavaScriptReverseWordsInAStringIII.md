@@ -38,7 +38,7 @@ All the words in `s` are separated by a single space.
 
 ## Explanation:
 
-I've created a function expression, using ES6 syntax, that is defined by an anonymous function that accepts `s` as a string of words.
+I've written a function expression, using ES6 syntax, that is defined by an anonymous function that accepts `s` as a string of words.
 <br/>
 
 Within the anonymous function, the string `s` is split into an array of string words everywhere there is a space `' '` by using the string prototype `split` method.
