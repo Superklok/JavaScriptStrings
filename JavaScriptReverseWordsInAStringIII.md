@@ -1,42 +1,51 @@
-# JavaScript Reverse Words In A String III
+# JavaScript Reverse Words in a String III
+<br/>
 
-## Challenge:
-
+## Challenge
 Given a string `s`, reverse the order of characters in each word within a sentence while still preserving whitespace and initial word order.
-
-### 1<sup>st</sup> Example:
-
-`Input: s = "Here's a string of words"`
 <br/>
-`Output: "sdrow fo gnirts a s'ereH"`
-
-### 2<sup>nd</sup> Example:
-
-`Input: s = "Superklok Labs"`
 <br/>
-`Output: "sbaL kolkrepuS"`
 
-### Constraints:
+### 1<sup>st</sup> Example
 
-`1 <= s.length <= 5 * 10⁴`
-<br/>
-`s` contains printable ASCII characters.
-<br/>
-`s` does not contain any leading or trailing spaces.
-<br/>
-There is at least one word in `s`.
-<br/>
-All the words in `s` are separated by a single space.
+```JavaScript
+Input: s = "Here's a string of words"
+Output: "sdrow fo gnirts a s'ereH"
+```
 
-## Solution:
+### 2<sup>nd</sup> Example
 
-`const reverseWords = (s) => {`
-<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`return s.split(' ').map((w) => w.split('').reverse().join('')).join(' ');`
-<br/>
-`};`
+```JavaScript
+Input: s = "Superklok Labs"
+Output: "sbaL kolkrepuS"
+```
 
-## Explanation:
+<br/>
+
+### Constraints
+
+```JavaScript
+1 <= s.length <= 5 * 10⁴
+```
+
+- `s` contains printable ASCII characters.
+- `s` does not contain any leading or trailing spaces.
+- There is at least one word in `s`.
+- All the words in `s` are separated by a single space.
+
+<br/>
+
+## Solution
+
+```JavaScript
+const reverseWords = (s) => {
+    return s.split(' ').map((w) => w.split('').reverse().join('')).join(' ');
+};
+```
+
+<br/>
+
+## Explanation
 
 I've written a function expression, using ES6 syntax, that is defined by an anonymous function that accepts `s` as a string of words.
 <br/>

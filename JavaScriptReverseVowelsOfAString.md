@@ -1,74 +1,71 @@
-# JavaScript Reverse Vowels Of A String
+# JavaScript Reverse Vowels of a String
+<br/>
 
-## Challenge:
-
+## Challenge
 Given a string `s`, reverse only all the vowels in the string and return it.
 
 The vowels are `'a'`, `'e'`, `'i'`, `'o'`, and `'u'`, and they can appear in both cases.
-
-### 1<sup>st</sup> Example:
-
-`Input: s = "hello"`
-<br/>
-`Output: "holle"`
-
-### 2<sup>nd</sup> Example:
-
-`Input: s = "leetcode"`
-<br/>
-`Output: "leotcede`
-
-### Constraints:
-
-`1 <= s.length <= 3 * 10⁵`
-<br/>
-`s` consist of printable ASCII characters.
-
-## Solution:
-
-`const reverseVowels = (s) => {`
-<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`let vowels = ["a", "A", "e", "E", "i", "I", "o", "O", "u", "U"],`
-<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`stack = [];`
-<br/>
-<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`for (let i = 0; i < s.length; i++) {`
-<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`if (vowels.indexOf(s[i]) !== -1) {`
-<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`stack.push(s[i]);`
-<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`}`
-<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`}`
-<br/>
-<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`let ans = [];`
-<br/>
-<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`for (let i = 0; i < s.length; i++) {`
-<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`if (vowels.indexOf(s[i]) !== -1) {`
-<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`ans.push(stack.pop());`
-<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`} else {`
-<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`ans.push(s[i]);`
-<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`}`
-<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`}`
-<br/>
-<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`return ans.join('');`
-<br/>
-`};`
 <br/>
 <br/>
 
-## Explanation:
+### 1<sup>st</sup> Example
+
+```JavaScript
+Input: s = "hello"
+Output: "holle"
+```
+
+<br/>
+
+### 2<sup>nd</sup> Example
+
+```JavaScript
+Input: s = "leetcode"
+Output: "leotcede"
+```
+
+<br/>
+
+### Constraints
+
+```JavaScript
+1 <= s.length <= 3 * 10⁵
+```
+
+- `s` consist of printable ASCII characters.
+
+<br/>
+
+## Solution
+
+```JavaScript
+const reverseVowels = (s) => {
+    let vowels = ["a", "A", "e", "E", "i", "I", "o", "O", "u", "U"],
+        stack  = [];
+
+    for (let i = 0; i < s.length; i++) {
+        if (vowels.indexOf(s[i]) !== -1) {
+            stack.push(s[i]);
+        }
+    }
+
+    let ans = [];
+
+    for (let i = 0; i < s.length; i++) {
+        if (vowels.indexOf(s[i]) !== -1) {
+            ans.push(stack.pop());
+        } else {
+            ans.push(s[i]);
+        }
+    }
+
+    return ans.join('');
+};
+```
+
+<br/>
+
+## Explanation
 
 I've coded a function called  `reverseVowels`  that takes a string  `s`  as input. The purpose of this function is to reverse the vowels in the input string and return the modified string.
 <br/>

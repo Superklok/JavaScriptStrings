@@ -1,56 +1,65 @@
 # JavaScript Valid Palindrome
+<br/>
 
-## Challenge:
+## Challenge
 
 A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers.
 
 Given a string `s`, return `true` if it is a palindrome, or `false` otherwise.
+<br/>
+<br/>
 
-### 1<sup>st</sup> Example:
+### 1<sup>st</sup> Example
 
-`Input: s = "A man, a plan, a canal: Panama"`
-<br/>
-`Output: true`
-<br/>
-`Explanation: "amanaplanacanalpanama" is a palindrome.`
+```JavaScript
+Input: s = "A man, a plan, a canal: Panama"
+Output: true
+Explanation: "amanaplanacanalpanama" is a palindrome.
+```
 
-### 2<sup>nd</sup> Example:
+### 2<sup>nd</sup> Example
 
-`Input: s = "race a car"`
-<br/>
-`Output: false`
-<br/>
-`Explanation: "raceacar" is not a palindrome.`
+```JavaScript
+Input: s = "race a car"
+Output: false
+Explanation: "raceacar" is not a palindrome.
+```
 
-### 3<sup>rd</sup> Example:
+### 3<sup>rd</sup> Example
 
-`Input: s = " "`
-<br/>
-`Output: true`
-<br/>
-`Explanation: s is an empty string "" after removing non-alphanumeric characters.
-Since an empty string reads the same forward and backward, it is a palindrome.`
+```JavaScript
+Input: s = " "
+Output: true
+Explanation: s is an empty string "" after removing non-alphanumeric characters.
+             Since an empty string reads the same forward and backward, it is a palindrome.
+```
 
-### Constraints:
+<br/>
 
-`1 <= s.length <= 2 * 10⁵`
-<br/>
-`s` consists only of printable ASCII characters.
+### Constraints
 
-## Solution:
+```JavaScript
+1 <= s.length <= 2 * 10⁵
+```
 
-`const isPalindrome = (s) => {`
-<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`let sanitizedString = s.replace(/\W|_/g,''),`
-<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`reversedString = sanitizedString.split('').reverse().join('');`
-<br/>
-<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`return sanitizedString.toLowerCase() == reversedString.toLowerCase();`
-<br/>
-`};`
+- `s` consists only of printable ASCII characters.
 
-## Explanation:
+<br/>
+
+## Solution
+
+```JavaScript
+const isPalindrome = (s) => {
+    let sanitizedString = s.replace(/\W|_/g,''),
+        reversedString  = sanitizedString.split('').reverse().join('');
+
+    return sanitizedString.toLowerCase() == reversedString.toLowerCase();
+};
+```
+
+<br/>
+
+## Explanation
 
 I've built a function expression, using ES6 syntax, that is defined by an anonymous function that accepts `s` as a string of words.
 <br/>

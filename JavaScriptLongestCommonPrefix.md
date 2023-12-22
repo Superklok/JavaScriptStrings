@@ -1,61 +1,63 @@
 # JavaScript Longest Common Prefix
+<br/>
 
-## Challenge:
+## Challenge
 
 Write a function to find the longest common prefix string amongst an array of strings.
 
 If there is no common prefix, return an empty string `""`.
-
-### 1<sup>st</sup> Example:
-
-`Input: strs = ["flower","flow","flight"]`
-<br/>
-`Output: "fl"`
-
-### 2<sup>nd</sup> Example:
-
-`Input: strs = ["dog","racecar","car"]`
-<br/>
-`Output: ""`
-<br/>
-`Explanation: There is no common prefix among the input strings.`
-
-### Constraints:
-
-`1 <= strs.length <= 200`
-<br/>
-`0 <= strs[i].length <= 200`
-<br/>
-`strs[i]` consists of only lower-case English letters.
-
-## Solution:
-
-`const longestCommonPrefix = (strs) => {`
-<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`let ans = '';`
-<br/>
-<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`for (i in strs[0]) {`
-<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`if (!strs.every((el) => el[i] === strs[0][i])) {`
-<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`break;`
-<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`}`
-<br/>
-<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`ans += strs[0][i];`
-<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`}`
-<br/>
-<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`return ans;`
-<br/>
-`};`
 <br/>
 <br/>
 
-## Explanation:
+### 1<sup>st</sup> Example
+
+```JavaScript
+Input: strs = ["flower","flow","flight"]
+Output: "fl"
+```
+
+### 2<sup>nd</sup> Example
+
+```JavaScript
+Input: strs = ["dog","racecar","car"]
+Output: ""
+Explanation: There is no common prefix among the input strings.
+```
+
+<br/>
+
+### Constraints
+
+```JavaScript
+1 <= strs.length <= 200
+0 <= strs[i].length <= 200
+```
+
+- `strs[i]` consists of only lower-case English letters.
+
+<br/>
+
+## Solution
+
+```JavaScript
+const longestCommonPrefix = (strs) => {
+    let ans = '';
+
+    for (i in strs[0]) {
+        if (!strs.every((el) => el[i] === strs[0][i])) {
+            break;
+        }
+
+        ans += strs[0][i];
+    }
+
+    return ans;
+};
+```
+
+<br/>
+
+## Explanation
 
 I've defined a function called `longestCommonPrefix` that takes an array of strings, `strs`, as input. The purpose of this function is to find the longest common prefix among all the strings in the array and return it as a single string.
 <br/>

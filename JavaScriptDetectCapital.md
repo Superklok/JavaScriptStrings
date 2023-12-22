@@ -1,45 +1,55 @@
 # JavaScript Detect Capital
+<br/>
 
-## Challenge:
-
+## Challenge
 Usage of capitals in a word will be deemed correct when one of the following cases is met:
 - All letters in the word are capitals, like `"SUPERKLOK"` for instance.
 - All letters in the word are not capitals, such as `"superklok"`.
 - Only the first letter in the word is capitalized, as in `"Superklok"`.
 
 Given a string word, return `true` if the usage of capitals in it is correct.
-
-### 1<sup>st</sup> Example:
-
-`Input: word = "SUPERKLOK"`
 <br/>
-`Output: true`
-
-### 2<sup>nd</sup> Example:
-
-`Input: word = "SuPeRkLoK"`
 <br/>
-`Output: false`
 
-### Constraints:
+### 1<sup>st</sup> Example
 
-`1 <= word.length <= 100`
-<br/>
-`word` consists of lowercase and/or uppercase English letters.
+```JavaScript
+Input: word = "SUPERKLOK"
+Output: true
+```
 
-## Solution:
+### 2<sup>nd</sup> Example
 
-`const detectCapitalUse = function(word) {`
-<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`return (word === word.toUpperCase() ||`
-<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`word === word.toLowerCase() ||`
-<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`word === word[0].toUpperCase() + word.slice(1).toLowerCase());`
-<br/>
-`};`
+```JavaScript
+Input: word = "SuPeRkLoK"
+Output: false
+```
 
-## Explanation:
+<br/>
+
+### Constraints
+
+```JavaScript
+1 <= word.length <= 100
+```
+
+- `word` consists of lowercase and/or uppercase English letters.
+
+<br/>
+
+## Solution
+
+```JavaScript
+const detectCapitalUse = function(word) {
+    return (word === word.toUpperCase() ||
+            word === word.toLowerCase() ||
+            word === word[0].toUpperCase() + word.slice(1).toLowerCase());
+};
+```
+
+<br/>
+
+## Explanation
 
 I've decided to use the OR operator to return a Boolean based on three different acceptable condition possibilities.
 <br/>
