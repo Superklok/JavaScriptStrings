@@ -9,25 +9,22 @@ Given a string `s`, reverse the order of characters in each word within a senten
 ### 1<sup>st</sup> Example
 
 ```JavaScript
-Input: s = "Here's a string of words"
-Output: "sdrow fo gnirts a s'ereH"
+Input: s = 'Here's a string of words'
+Output: 'sdrow fo gnirts a s'ereH'
 ```
 
 ### 2<sup>nd</sup> Example
 
 ```JavaScript
-Input: s = "Superklok Labs"
-Output: "sbaL kolkrepuS"
+Input: s = 'Superklok Labs'
+Output: 'sbaL kolkrepuS'
 ```
 
 <br/>
 
 ### Constraints
 
-```JavaScript
-1 <= s.length <= 5 * 10⁴
-```
-
+- `1 <= s.length <= 5 * 10⁴`
 - `s` contains printable ASCII characters.
 - `s` does not contain any leading or trailing spaces.
 - There is at least one word in `s`.
@@ -62,3 +59,22 @@ The string character arrays are then reversed using the array prototype `reverse
 Once the array prototype `map` method is complete, the reversed words are then joined into a string using the array prototype `join` method that adds a space `' '` between each reversed word.
 <br/>
 <br/>
+<br/>
+<br/>
+
+### :next_track_button: [Next (Valid Palindrome)][Next]
+<br/>
+
+### :previous_track_button: [Previous (Detect Capital)][Previous]
+<br/>
+
+### :play_or_pause_button: [More String Challenges][More]
+<br/>
+
+### :eject_button: [Return to Course Outline][Return]
+<br/>
+
+[Next]: https://github.com/Superklok/JavaScriptStrings/blob/main/JavaScriptValidPalindrome.md
+[Previous]: https://github.com/Superklok/JavaScriptStrings/blob/main/JavaScriptDetectCapital.md
+[More]: https://github.com/Superklok/JavaScriptStrings/tree/main
+[Return]: https://github.com/Superklok/LearnJavaScript

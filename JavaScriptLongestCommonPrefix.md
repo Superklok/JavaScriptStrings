@@ -5,22 +5,22 @@
 
 Write a function to find the longest common prefix string amongst an array of strings.
 
-If there is no common prefix, return an empty string `""`.
+If there is no common prefix, return an empty string `''`.
 <br/>
 <br/>
 
 ### 1<sup>st</sup> Example
 
 ```JavaScript
-Input: strs = ["flower","flow","flight"]
-Output: "fl"
+Input: strs = ['flower','flow','flight']
+Output: 'fl'
 ```
 
 ### 2<sup>nd</sup> Example
 
 ```JavaScript
-Input: strs = ["dog","racecar","car"]
-Output: ""
+Input: strs = ['dog','racecar','car']
+Output: ''
 Explanation: There is no common prefix among the input strings.
 ```
 
@@ -28,11 +28,8 @@ Explanation: There is no common prefix among the input strings.
 
 ### Constraints
 
-```JavaScript
-1 <= strs.length <= 200
-0 <= strs[i].length <= 200
-```
-
+- `1 <= strs.length <= 200`
+- `0 <= strs[i].length <= 200`
 - `strs[i]` consists of only lower-case English letters.
 
 <br/>
@@ -83,3 +80,22 @@ Finally, the `ans` string is returned as the result of the function.
 In summary, this function iterates over the characters of the first string in the input array and checks if all the strings have the same character at each index. It builds the longest common prefix by appending the common characters to a result string. The resulting string is then returned as the output of the function.
 <br/>
 <br/>
+<br/>
+<br/>
+
+### :next_track_button: [Next (Two Sum)][Next]
+<br/>
+
+### :previous_track_button: [Previous (Reverse Vowels of a String)][Previous]
+<br/>
+
+### :play_or_pause_button: [More String Challenges][More]
+<br/>
+
+### :eject_button: [Return to Course Outline][Return]
+<br/>
+
+[Next]: https://github.com/Superklok/JavaScriptArrays/blob/main/JavaScriptTwoSum.md
+[Previous]: https://github.com/Superklok/JavaScriptStrings/blob/main/JavaScriptReverseVowelsOfAString.md
+[More]: https://github.com/Superklok/JavaScriptStrings/tree/main
+[Return]: https://github.com/Superklok/LearnJavaScript

@@ -11,8 +11,8 @@ The vowels are `'a'`, `'e'`, `'i'`, `'o'`, and `'u'`, and they can appear in bot
 ### 1<sup>st</sup> Example
 
 ```JavaScript
-Input: s = "hello"
-Output: "holle"
+Input: s = 'hello'
+Output: 'holle'
 ```
 
 <br/>
@@ -20,18 +20,15 @@ Output: "holle"
 ### 2<sup>nd</sup> Example
 
 ```JavaScript
-Input: s = "leetcode"
-Output: "leotcede"
+Input: s = 'leetcode'
+Output: 'leotcede'
 ```
 
 <br/>
 
 ### Constraints
 
-```JavaScript
-1 <= s.length <= 3 * 10⁵
-```
-
+- `1 <= s.length <= 3 * 10⁵`
 - `s` consist of printable ASCII characters.
 
 <br/>
@@ -40,7 +37,7 @@ Output: "leotcede"
 
 ```JavaScript
 const reverseVowels = (s) => {
-    let vowels = ["a", "A", "e", "E", "i", "I", "o", "O", "u", "U"],
+    let vowels = ['a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U'],
         stack  = [];
 
     for (let i = 0; i < s.length; i++) {
@@ -94,3 +91,22 @@ Finally, the  `ans`  array is converted to a string using the  `join()`  method 
 In summary, this function iterates through the input string twice. The first iteration collects the vowels in the  `stack`  array, and the second iteration replaces the vowels in the input string with the vowels from the  `stack`  array in reverse order. The modified string is then returned as the output of the function.
 <br/>
 <br/>
+<br/>
+<br/>
+
+### :next_track_button: [Next (Longest Common Prefix)][Next]
+<br/>
+
+### :previous_track_button: [Previous (Valid Palindrome)][Previous]
+<br/>
+
+### :play_or_pause_button: [More String Challenges][More]
+<br/>
+
+### :eject_button: [Return to Course Outline][Return]
+<br/>
+
+[Next]: https://github.com/Superklok/JavaScriptStrings/blob/main/JavaScriptLongestCommonPrefix.md
+[Previous]: https://github.com/Superklok/JavaScriptStrings/blob/main/JavaScriptValidPalindrome.md
+[More]: https://github.com/Superklok/JavaScriptStrings/tree/main
+[Return]: https://github.com/Superklok/LearnJavaScript

@@ -3,9 +3,9 @@
 
 ## Challenge
 Usage of capitals in a word will be deemed correct when one of the following cases is met:
-- All letters in the word are capitals, like `"SUPERKLOK"` for instance.
-- All letters in the word are not capitals, such as `"superklok"`.
-- Only the first letter in the word is capitalized, as in `"Superklok"`.
+- All letters in the word are capitals, like `'SUPERKLOK'` for instance.
+- All letters in the word are not capitals, such as `'superklok'`.
+- Only the first letter in the word is capitalized, as in `'Superklok'`.
 
 Given a string word, return `true` if the usage of capitals in it is correct.
 <br/>
@@ -14,14 +14,14 @@ Given a string word, return `true` if the usage of capitals in it is correct.
 ### 1<sup>st</sup> Example
 
 ```JavaScript
-Input: word = "SUPERKLOK"
+Input: word = 'SUPERKLOK'
 Output: true
 ```
 
 ### 2<sup>nd</sup> Example
 
 ```JavaScript
-Input: word = "SuPeRkLoK"
+Input: word = 'SuPeRkLoK'
 Output: false
 ```
 
@@ -29,10 +29,7 @@ Output: false
 
 ### Constraints
 
-```JavaScript
-1 <= word.length <= 100
-```
-
+- `1 <= word.length <= 100`
 - `word` consists of lowercase and/or uppercase English letters.
 
 <br/>
@@ -66,3 +63,22 @@ The final condition will return `true` if the letter at `index 0` of the `word` 
 If none of the above three conditions are met, then the function returns `false` to indicate that the capitalized characters are not being used correctly in the test string.
 <br/>
 <br/>
+<br/>
+<br/>
+
+### :next_track_button: [Next (Reverse Words in a String III)][Next]
+<br/>
+
+### :previous_track_button: [Previous (Reverse String)][Previous]
+<br/>
+
+### :play_or_pause_button: [More String Challenges][More]
+<br/>
+
+### :eject_button: [Return to Course Outline][Return]
+<br/>
+
+[Next]: https://github.com/Superklok/JavaScriptStrings/blob/main/JavaScriptReverseWordsInAStringIII.md
+[Previous]: https://github.com/Superklok/JavaScriptStrings/blob/main/JavaScriptReverseString.md
+[More]: https://github.com/Superklok/JavaScriptStrings/tree/main
+[Return]: https://github.com/Superklok/LearnJavaScript

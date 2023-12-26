@@ -12,25 +12,22 @@ You must do this by modifying the input array in-place with `O(1)` extra memory.
 ### 1<sup>st</sup> Example
 
 ```JavaScript
-Input: s = ["s","u","p","e","r","k","l","o","k"]
-Output: ["k","o","l","k","r","e","p","u","s"]
+Input: s = ['s','u','p','e','r','k','l','o','k']
+Output: ['k','o','l','k','r','e','p','u','s']
 ```
 
 ### 2<sup>nd</sup> Example
 
 ```JavaScript
-Input: s = ["R","a","c","e","c","a","r"]
-Output: ["r","a","c","e","c","a","R"]
+Input: s = ['R','a','c','e','c','a','r']
+Output: ['r','a','c','e','c','a','R']
 ```
 
 <br/>
 
 ### Constraints
 
-```JavaScript
-1 <= s.length <= 10⁵
-```
-
+- `1 <= s.length <= 10⁵`
 - `s[i]` is a printable ascii character.
 
 <br/>
@@ -53,3 +50,22 @@ I've created a function expression, using ES6 syntax, that is defined by an anon
 Within the anonymous function, the `reverse` array prototype method is applied to the string array `s`. This will output the reverse of any array that the `reverseString` function is applied to.
 <br/>
 <br/>
+<br/>
+<br/>
+
+### :next_track_button: [Next (Detect Capital)][Next]
+<br/>
+
+### :previous_track_button: [Previous (Code Smells)][Previous]
+<br/>
+
+### :play_or_pause_button: [More String Challenges][More]
+<br/>
+
+### :eject_button: [Return to Course Outline][Return]
+<br/>
+
+[Next]: https://github.com/Superklok/JavaScriptStrings/blob/main/JavaScriptDetectCapital.md
+[Previous]: https://github.com/Superklok/ProgrammingPrinciples/blob/main/CodeSmells.md
+[More]: https://github.com/Superklok/JavaScriptStrings/tree/main
+[Return]: https://github.com/Superklok/LearnJavaScript
