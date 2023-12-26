@@ -97,5 +97,5 @@ In summary, this function iterates over the characters of the first string in th
 
 [Next]: https://github.com/Superklok/JavaScriptArrays/blob/main/JavaScriptTwoSum.md
 [Previous]: https://github.com/Superklok/JavaScriptStrings/blob/main/JavaScriptReverseVowelsOfAString.md
-[More]: https://github.com/Superklok/JavaScriptStrings/tree/main
+[More]: https://github.com/Superklok/JavaScriptStrings
 [Return]: https://github.com/Superklok/LearnJavaScript

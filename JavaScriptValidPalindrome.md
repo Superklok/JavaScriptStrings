@@ -87,5 +87,5 @@ The `sanitizedString` and `reversedString` variables have the string prototype `
 
 [Next]: https://github.com/Superklok/JavaScriptStrings/blob/main/JavaScriptReverseVowelsOfAString.md
 [Previous]: https://github.com/Superklok/JavaScriptStrings/blob/main/JavaScriptReverseWordsInAStringIII.md
-[More]: https://github.com/Superklok/JavaScriptStrings/tree/main
+[More]: https://github.com/Superklok/JavaScriptStrings
 [Return]: https://github.com/Superklok/LearnJavaScript

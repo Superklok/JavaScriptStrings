@@ -108,5 +108,5 @@ In summary, this function iterates through the input string twice. The first ite
 
 [Next]: https://github.com/Superklok/JavaScriptStrings/blob/main/JavaScriptLongestCommonPrefix.md
 [Previous]: https://github.com/Superklok/JavaScriptStrings/blob/main/JavaScriptValidPalindrome.md
-[More]: https://github.com/Superklok/JavaScriptStrings/tree/main
+[More]: https://github.com/Superklok/JavaScriptStrings
 [Return]: https://github.com/Superklok/LearnJavaScript

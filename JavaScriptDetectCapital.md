@@ -80,5 +80,5 @@ If none of the above three conditions are met, then the function returns `false`
 
 [Next]: https://github.com/Superklok/JavaScriptStrings/blob/main/JavaScriptReverseWordsInAStringIII.md
 [Previous]: https://github.com/Superklok/JavaScriptStrings/blob/main/JavaScriptReverseString.md
-[More]: https://github.com/Superklok/JavaScriptStrings/tree/main
+[More]: https://github.com/Superklok/JavaScriptStrings
 [Return]: https://github.com/Superklok/LearnJavaScript

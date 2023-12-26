@@ -76,5 +76,5 @@ Once the array prototype `map` method is complete, the reversed words are then j
 
 [Next]: https://github.com/Superklok/JavaScriptStrings/blob/main/JavaScriptValidPalindrome.md
 [Previous]: https://github.com/Superklok/JavaScriptStrings/blob/main/JavaScriptDetectCapital.md
-[More]: https://github.com/Superklok/JavaScriptStrings/tree/main
+[More]: https://github.com/Superklok/JavaScriptStrings
 [Return]: https://github.com/Superklok/LearnJavaScript

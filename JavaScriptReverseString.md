@@ -67,5 +67,5 @@ Within the anonymous function, the `reverse` array prototype method is applied t
 
 [Next]: https://github.com/Superklok/JavaScriptStrings/blob/main/JavaScriptDetectCapital.md
 [Previous]: https://github.com/Superklok/ProgrammingPrinciples/blob/main/CodeSmells.md
-[More]: https://github.com/Superklok/JavaScriptStrings/tree/main
+[More]: https://github.com/Superklok/JavaScriptStrings
 [Return]: https://github.com/Superklok/LearnJavaScript
