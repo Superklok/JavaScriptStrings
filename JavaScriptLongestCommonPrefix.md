@@ -21,7 +21,8 @@ Output: 'fl'
 ```JavaScript
 Input: strs = ['dog','racecar','car']
 Output: ''
-Explanation: There is no common prefix among the input strings.
+Explanation: There is no common prefix among
+             the input strings.
 ```
 
 <br/>

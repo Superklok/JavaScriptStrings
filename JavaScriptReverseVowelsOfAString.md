@@ -37,7 +37,11 @@ Output: 'leotcede'
 
 ```JavaScript
 const reverseVowels = (s) => {
-    let vowels = ['a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U'],
+    let vowels = ['a', 'A',
+                  'e', 'E',
+                  'i', 'I',
+                  'o', 'O',
+                  'u', 'U'],
         stack  = [];
 
     for (let i = 0; i < s.length; i++) {

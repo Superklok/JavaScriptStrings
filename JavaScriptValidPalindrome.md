@@ -30,8 +30,10 @@ Explanation: 'raceacar' is not a palindrome.
 ```JavaScript
 Input: s = ' '
 Output: true
-Explanation: s is an empty string '' after removing non-alphanumeric characters.
-             Since an empty string reads the same forward and backward, it is a palindrome.
+Explanation: s is an empty string '' after
+             removing non-alphanumeric characters.
+             Since an empty string reads the same
+             forward and backward, it is a palindrome.
 ```
 
 <br/>
@@ -48,9 +50,12 @@ Explanation: s is an empty string '' after removing non-alphanumeric characters.
 ```JavaScript
 const isPalindrome = (s) => {
     let sanitizedString = s.replace(/\W|_/g,''),
-        reversedString  = sanitizedString.split('').reverse().join('');
+        reversedString  = sanitizedString.split('')
+                                         .reverse()
+                                         .join('');
 
-    return sanitizedString.toLowerCase() == reversedString.toLowerCase();
+    return sanitizedString.toLowerCase() == reversedString
+                                            .toLowerCase();
 };
 ```
 

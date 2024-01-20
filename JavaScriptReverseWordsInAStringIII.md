@@ -36,7 +36,10 @@ Output: 'sbaL kolkrepuS'
 
 ```JavaScript
 const reverseWords = (s) => {
-    return s.split(' ').map((w) => w.split('').reverse().join('')).join(' ');
+    return s.split(' ').map((w) => w.split('')
+                                    .reverse()
+                                    .join(''))
+                                    .join(' ');
 };
 ```
 
