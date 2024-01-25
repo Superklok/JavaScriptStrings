@@ -15,8 +15,6 @@ Input: s = 'hello'
 Output: 'holle'
 ```
 
-<br/>
-
 ### 2<sup>nd</sup> Example
 
 ```JavaScript
